@@ -1,0 +1,6 @@
+.categoria-img {
+  width: 100%;        /* ocupa todo el ancho de la columna */
+  height: 200px;      /* altura fija */
+  object-fit: cover;  /* mantiene proporción y recorta si es necesario */
+  border-radius: 8px; /* opcional, para redondear bordes */
+}

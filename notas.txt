@@ -1,0 +1,7 @@
+Empleado prueba
+user: lucas
+password: 123
+
+Admin prueba
+user: adminFede
+password: root

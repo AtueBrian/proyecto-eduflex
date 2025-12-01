@@ -1,0 +1,5 @@
+.imagen-detalle {
+  width: 400px;   /* ancho deseado */
+  height: 400px;  /* alto deseado */
+  overflow: hidden;
+}
