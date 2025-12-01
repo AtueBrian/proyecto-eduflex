@@ -16,14 +16,14 @@ MySQL
 Git (opcional pero recomendado)
 
 📥 2. Clonar el repositorio
-git clone https://github.com/TU-USUARIO/TU-REPO.git
-cd TU-REPO
+Por consola:
+git clone https://github.com/lucasfederico/proyecto-eduflex.git
 
 📦 3. Instalación de dependencias
 
 El proyecto tiene dependencias separadas para Back y Front, por lo tanto se instalan por separado.
 
-Abrir la consola y ejecutar los siguientes comandos
+En la Carpeta del Repositorio abrir la consola y ejecutar los siguientes comandos
 ▶️ Back-end :
 cd Back
 npm install
