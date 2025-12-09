@@ -156,7 +156,7 @@ export default function ABMGenerico({ entidad, columnas, endpoint }) {
           Actualizar {entidad}
         </button>
       ) : (
-        <button className="btn btn-primary" onClick={handleGuardar}>
+        <button className="btn btn-success" onClick={handleGuardar}>
           Guardar {entidad}
         </button>
       )}

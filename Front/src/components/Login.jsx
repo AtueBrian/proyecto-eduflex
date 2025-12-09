@@ -51,29 +51,37 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <form className="login-card" onSubmit={handleSubmit}>
-        <img src="" alt="" />
-        <h2>Iniciar Sesión</h2>
-        <input
-          type="text"
-          placeholder="Username"
-          value={usuario}
-          onChange={(e) => setUsuario(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type="submit" disabled={loading}>
-          {loading ? "Conectando..." : "Ingresar"}
-        </button>
-        {error && <p className="error">{error}</p>}
-        {success && <p className="success">{success}</p>}
-      </form>
-    </div>
+    <form className="login-card" onSubmit={handleSubmit}>
+      <img src="" alt="" />
+      <h3 className="text-color">EDUFLEX</h3>
+      <p>Bienvenido, accede a tus beneficios estudiantiles</p>
+
+      <input
+        type="text"
+        placeholder="Username"
+        value={usuario}
+        onChange={(e) => setUsuario(e.target.value)}
+        required
+      />
+
+      <input
+        type="password"
+        placeholder="Contraseña"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+      />
+
+      <button type="submit" disabled={loading}>
+        {loading ? "Conectando..." : "Ingresar"}
+      </button>
+
+      {error && <p className="error">{error}</p>}
+      {success && <p className="success">{success}</p>}
+
+      <p>© 2025 EDUFLEX. Todos los derechos reservados</p>
+    </form>
+  </div>
+
   );
 }

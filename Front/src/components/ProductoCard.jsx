@@ -1,12 +1,11 @@
-
 import { useNavigate } from "react-router-dom";
-
+import "./ProductoCard.css"
 
 export default function ProductoCard({ producto }) {
   const navigate = useNavigate();
 
   const handleVerMas = () => {
-    navigate(`/producto/${producto.id}`); // redirige al detalle
+    navigate(`/producto/${producto.id}`);
   };
 
   return (
@@ -16,12 +15,19 @@ export default function ProductoCard({ producto }) {
         className="card-img-top"
         alt={producto.nombre}
       />
-      <div className="card-body">
+
+      <div className="card-body d-flex flex-column">
         <h5 className="card-title">{producto.nombre}</h5>
-        <p className="card-text text-muted">{producto.descripcion?.slice(0, 50)}...</p>
+
+        <p className="card-text text-muted">
+          {producto.descripcion?.slice(0, 50)}...
+        </p>
+
         <p className="text-success">{producto.oferta ? "En oferta" : ""}</p>
+
         <p>Puntos: {producto.puntosRequeridos}</p>
-        <button className="btn btn-outline-dark" onClick={handleVerMas}>
+
+        <button className="btn btn-success mt-auto" onClick={handleVerMas}>
           Ver más
         </button>
       </div>

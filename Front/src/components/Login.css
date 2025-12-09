@@ -1,14 +1,17 @@
+.text-color{
+  color: #2f7371;
+}
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #0275a3;
+  background: #f0f4f8;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login-card {
-  background: white;
+  background: #f8fefd;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -17,10 +20,7 @@
   text-align: center;
 }
 
-.login-card h2 {
-  margin-bottom: 1.5rem;
-  color: #333;
-}
+
 
 .login-card input {
   width: 100%;
@@ -40,7 +40,7 @@
 .login-card button {
   width: 100%;
   padding: 0.9rem;
-  background-color: #0078d7;
+  background-color: #2f7371;
   color: white;
   border: none;
   border-radius: 8px;
@@ -50,7 +50,7 @@
 }
 
 .login-card button:hover {
-  background-color: #005fa3;
+  background-color: #225452;
 }
 
 .error {

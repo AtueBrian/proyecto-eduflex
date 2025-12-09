@@ -1,0 +1,12 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body button {
+  margin-top: auto;   /* empuja el botón hacia abajo */
+}
+.card-img-top {
+  height: 200px;        /* ajustá a lo que quieras */
+  object-fit: cover;    /* rellena sin deformarse */
+}

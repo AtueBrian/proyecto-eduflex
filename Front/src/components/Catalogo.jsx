@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./Header"; // ruta relativa correcta
 import ProductoCard from "./ProductoCard";
+import "./Catalogo.css";
 
 export default function Catalogo() {
   const [productos, setProductos] = useState([]);
@@ -37,7 +38,7 @@ export default function Catalogo() {
   return (
     <>
     <Header/>
-    <div className="container mt-4">
+    <div className="color-background container mt-4">
       <div className="row">
         {/* Sidebar de filtros */}
         <div className="col-md-3">
