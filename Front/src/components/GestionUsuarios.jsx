@@ -8,7 +8,7 @@ export default function GestionUsuarios() {
     <HeaderAdmin/>
     <ABMGenerico
       entidad="Clientes"
-      columnas={["id", "usuario", "nombre", "puntos", "tipoUsuario"]}
+      columnas={["id", "usuario", "nombre", "puntos", "tipoUsuario","correo","password"]}
       endpoint="http://localhost:4000/api/clientes"
     />
     </>
